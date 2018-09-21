@@ -5,11 +5,11 @@
          version="3.1">
 
     <servlet>
-        <servlet-name>SimpleWarServlet</servlet-name>
-        <servlet-class>pl.sda.SimpleWarServlet</servlet-class>
+        <servlet-name>HerokuServlet</servlet-name>
+        <servlet-class>pl.sda.HerokuServlet</servlet-class>
     </servlet>
      <servlet-mapping>
-        <servlet-name>SimpleWarServlet</servlet-name>
+        <servlet-name>HerokuServlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
 

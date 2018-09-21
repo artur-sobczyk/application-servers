@@ -10,7 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
-public class SimpleWarServlet extends HttpServlet {
+public class HerokuServlet extends HttpServlet {
 
     protected void doGet(
             HttpServletRequest request,
@@ -25,7 +25,7 @@ public class SimpleWarServlet extends HttpServlet {
 
     private String readHtml() {
         try {
-            return Files.readAllLines(Paths.get(getClass().getResource("/simple-war-servlet.html").toURI()))
+            return Files.readAllLines(Paths.get(getClass().getResource("/heroku-servlet.html").toURI()))
                     .stream()
                     .collect(Collectors.joining(""));
         } catch (IOException | URISyntaxException e) {

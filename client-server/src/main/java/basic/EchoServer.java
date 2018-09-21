@@ -8,6 +8,15 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * One thread server allowing to connect only one client. To makeexample work:
+ * - start {@link EchoServer}
+ * - start {@link EchoClient}
+ * - use EchoClient console to write requests,
+ * - EchoServer will display it and send back
+ *
+ * Example can be used not only locally ba also using network. Just set in EchoClient proper IP address.
+ */
 public class EchoServer {
 
     public static final int ECHOPORT = 7;

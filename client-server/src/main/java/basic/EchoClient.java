@@ -12,7 +12,9 @@ import static basic.EchoServer.ANSI_GREEN;
 import static basic.EchoServer.ANSI_RESET;
 import static basic.EchoServer.ANSI_YELLOW;
 
-
+/**
+ * @see EchoServer
+ */
 public class EchoClient {
 
     public final static String HOST = "localhost";

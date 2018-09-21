@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>SimpleWarServlet</servlet-name>
-        <servlet-class>pl.sda.SimpleWarServlet</servlet-class>
+        <servlet-class>pl.sda.HerokuServlet</servlet-class>
     </servlet>
      <servlet-mapping>
         <servlet-name>SimpleWarServlet</servlet-name>

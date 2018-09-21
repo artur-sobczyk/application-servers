@@ -11,6 +11,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
+
+/**
+ * Basic http server running on port 80. To see how it works:
+ * - start {@link WebServer}
+ * - open in browser http://localhost
+ */
 public class WebServer {
     public static final int HTTP = 80;
     public static final String CRLF = "\r\n";

@@ -1,6 +1,10 @@
-Purpose of this project is to:
--
-
+# Demo cases
+- servlets, jsp
+- filter
+- session
+- redirect
+- forward
+- basic authentication and authorization
 
 # Tomcat:
 - $TOMCAT_HOME/conf/tomcat-users.xml 
@@ -8,14 +12,11 @@ Purpose of this project is to:
 example
 ``<user username="user" password="user" roles="user"/>``
 
-demo-servlets to przyk��dowy projekt maj�cy na celu pokaza�:
- - proces deploymentu appplicakcji webowej
- - prosty servlet
- - dzia�anie sesji
- - dzia�anie mechnizmu przekierowa� (redirect)
- - dzia�anie mechanizmu przes�a� (forward)
- - podstawowej autoryzacji i autentykacji
- 
- Dzia�anie mo�na sprawdzi� zwyk�� przegl�dark� jak i postmanem
- 
- Zalecany serwer aplikacji to tomcat 9
+# Hints:
+- build with `mvn clean install`
+- start server with `mvn jetty-run`
+- open: http://localhost:8080/
+
+# security:
+- use tomcat or payara
+- uncomment configuration in web.xml 
