@@ -9,7 +9,7 @@
 
     <parent>
         <groupId>pl.sda</groupId>
-        <artifactId>server-example</artifactId>
+        <artifactId>server-example-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
