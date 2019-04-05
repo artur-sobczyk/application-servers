@@ -18,3 +18,8 @@ Code can be easy used to be deployed on any app server event heroku.
 - https://www.baeldung.com/tomcat-deploy-war
 - https://www.javatpoint.com/servlet-tutorial
 - https://blog.payara.fish/deploying-to-payara-server-using-the-maven-cargo-plugin
+
+### windows commands:
+ `netstat -a -n -p tcp -o |  Select-String -Pattern 8080`
+ `Taskkill /PID <pid> /F`
+ 
