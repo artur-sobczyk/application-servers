@@ -21,5 +21,5 @@ Code can be easy used to be deployed on any app server event heroku.
 
 ### windows commands:
  `netstat -a -n -p tcp -o |  Select-String -Pattern 8080`
- `Taskkill /PID <pid> /F`
+ `taskkill /PID <pid> /F`
  

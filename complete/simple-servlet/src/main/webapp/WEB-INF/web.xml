@@ -56,7 +56,7 @@
 
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>/secured requires authentication</web-resource-name>
+            <web-resource-name>secured requires authentication</web-resource-name>
             <url-pattern>/secured</url-pattern>
             <http-method>GET</http-method>
         </web-resource-collection>
@@ -73,5 +73,15 @@
     <login-config>
         <auth-method>BASIC</auth-method>
     </login-config>
+
+    <servlet>
+        <servlet-name>LoggingServlet</servlet-name>
+        <servlet-class>pl.sda.servers.LoggingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoggingServlet</servlet-name>
+        <url-pattern>/logging/*</url-pattern>
+    </servlet-mapping>
 
 </web-app>

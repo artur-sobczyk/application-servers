@@ -11,12 +11,8 @@ import java.util.logging.Logger;
 
 public class SessionServlet extends HttpServlet {
 
-    Logger log = Logger.getLogger("SessionServlet");
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-        log.info("SessionServlet was called");
         HttpSession session = req.getSession(true);
         Integer counter = 0;
 
