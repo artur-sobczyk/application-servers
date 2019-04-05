@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>pl.sda.servers.simple</groupId>
+    <artifactId>simple-servlet</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.cargo</groupId>
+                <artifactId>cargo-maven2-plugin</artifactId>
+                <configuration>
+                    <container>
+                        <containerId>tomcat9x</containerId>
+                        <home>D:\soft\apache-tomcat-9.0.14</home>
+                    </container>
+                </configuration>
+            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.codehaus.cargo</groupId>-->
+                <!--<artifactId>cargo-maven2-plugin</artifactId>-->
+                <!--<version>1.7.3</version>-->
+                <!--<configuration>-->
+                    <!--<container>-->
+                        <!--<containerId>glassfish5x</containerId>-->
+                        <!--<type>installed</type>-->
+                        <!--<home>D:\soft\payara5</home>-->
+
+                    <!--</container>-->
+                    <!--<configuration>-->
+                        <!--<type>existing</type>-->
+                        <!--<home>D:\soft\payara5\glassfish\domains</home>-->
+                        <!--<properties>-->
+                            <!--<cargo.glassfish.domain.name>domain1</cargo.glassfish.domain.name>-->
+                            <!--<cargo.java.home>D:\soft\java\jdk8</cargo.java.home>-->
+                        <!--</properties>-->
+                    <!--</configuration>-->
+                <!--</configuration>-->
+                <!--&lt;!&ndash; provides JSR88 client API to deploy on Payara &ndash;&gt;-->
+                <!--<dependencies>-->
+                    <!--<dependency>-->
+                        <!--<groupId>org.glassfish.main.deployment</groupId>-->
+                        <!--<artifactId>deployment-client</artifactId>-->
+                        <!--<version>5.0</version>-->
+                    <!--</dependency>-->
+                <!--</dependencies>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+
+
+</project>
